@@ -1,5 +1,0 @@
-resources:
-  - nats-namespace.yaml
-  - nats.yaml
-
-namespace: anoti-nats

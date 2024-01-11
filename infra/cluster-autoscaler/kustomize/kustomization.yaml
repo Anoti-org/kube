@@ -1,5 +1,0 @@
-resources:
-  - cluster-autoscaler.yaml
-  - metrics-server.yaml
-
-namespace: kube-system

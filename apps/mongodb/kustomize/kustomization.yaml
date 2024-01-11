@@ -1,5 +1,0 @@
-resources:
-  - mongo-namespace.yaml
-  - mongodb.yaml
-
-namespace: anoti-mongo
