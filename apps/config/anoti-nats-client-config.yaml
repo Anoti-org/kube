@@ -3,4 +3,4 @@ kind: ConfigMap
 metadata:
   name: anoti-nats-client-config
 data:
-  NATS_SERVICE_DNS: anoti-nats.anoti-nats.svc.cluster.local
+  NATS_SERVICE_DNS: nats.anoti-nats.svc.cluster.local
