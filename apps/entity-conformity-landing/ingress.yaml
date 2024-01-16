@@ -9,7 +9,7 @@ spec:
   tls:
   - hosts:
     - anoti.io
-    secretName: tool-anoti-io-tls-secrets
+    secretName: landing-anoti-io-tls-secrets
   ingressClassName: nginx
   rules:
   - host: anoti.io
