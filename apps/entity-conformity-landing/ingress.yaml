@@ -1,0 +1,24 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: anoti-conformity-landing-ingress
+  annotations:
+    cert-manager.io/cluster-issuer: "letsencrypt-prod"
+    external-dns.alpha.kubernetes.io/hostname: anoti.io.
+spec:
+  tls:
+  - hosts:
+    - anoti.io
+    secretName: tool-anoti-io-tls-secrets
+  ingressClassName: nginx
+  rules:
+  - host: anoti.io
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: anoti-conformity-landing-clusterip
+            port:
+              number: 8080
