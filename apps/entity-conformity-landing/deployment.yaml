@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: anoti-conformity-landing
-        image: 250956544061.dkr.ecr.eu-west-3.amazonaws.com/anoti-conformity-landing:1.0.1
+        image: 250956544061.dkr.ecr.eu-west-3.amazonaws.com/anoti-conformity-landing:1.0.2
         imagePullPolicy: Always
         tty: true
         readinessProbe:
